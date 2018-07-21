@@ -49,8 +49,9 @@ class App < Sinatra::Base
       answer = (params[:number1].to_i) * (params[:number2].to_i)
     when "divide"
       answer = (params[:number1].to_i) / (params[:number2].to_i)
-
     end
+
+    answer.to_s
   end
 
 end
